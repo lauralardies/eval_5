@@ -19,13 +19,22 @@ def suma(a, b):
 
 def resta(a, b):
     '''
-    Esta función realiza la suma de dos números.
+    Esta función realiza la resta de dos números.
     '''
     if error_num(a, b) == True:
         return int(a)-int(b)
     else:
         return error_num(a, b)
 
-print(resta('0', '1'))
-print(resta(-1, 0))
-print(resta('d', 8))
+def producto(a, b):
+    '''
+    Esta función realiza el producto de dos números. 
+    '''
+    if error_num(a, b) == True:
+        return int(a)*int(b)
+    else:
+        return error_num(a, b)
+
+print(producto('9', '1'))
+print(producto(-1, 0))
+print(producto('d', 8))
