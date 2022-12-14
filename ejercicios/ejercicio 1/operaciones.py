@@ -8,6 +8,12 @@ def error_num(a, b):
     except ValueError:
         return 'Error: Tipo de dato no válido.'
 
+def error_div(a, b):
+    try:
+       return int(a)/int(b)
+    except ZeroDivisionError:
+        return 'Error: No es posible dividir entre cero.'
+
 def suma(a, b):
     '''
     Esta función realiza la suma de dos números.
@@ -35,6 +41,11 @@ def producto(a, b):
     else:
         return error_num(a, b)
 
-print(producto('9', '1'))
-print(producto(-1, 0))
-print(producto('d', 8))
+def division(a, b):
+    '''
+    Esta función realiza la división de dos números.
+    '''
+    if error_num(a, b) == True:
+        return error_div(a, b)
+    else:
+        return error_num(a, b)
