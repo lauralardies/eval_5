@@ -9,6 +9,9 @@ def error_num(a, b):
         return 'Error: Tipo de dato no válido.'
 
 def error_div(a, b):
+    '''
+    Esta función nos ayuda a determinar si la división introducida es entre 0.
+    '''
     try:
        return int(a)/int(b)
     except ZeroDivisionError:
