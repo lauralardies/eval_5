@@ -8,7 +8,7 @@ def error_num(a, b):
     except ValueError:
         return 'Error: Tipo de dato no válido.'
 
-def sumar(a, b):
+def suma(a, b):
     '''
     Esta función realiza la suma de dos números.
     '''
@@ -16,3 +16,16 @@ def sumar(a, b):
         return int(a)+int(b)
     else:
         return error_num(a, b)
+
+def resta(a, b):
+    '''
+    Esta función realiza la suma de dos números.
+    '''
+    if error_num(a, b) == True:
+        return int(a)-int(b)
+    else:
+        return error_num(a, b)
+
+print(resta('0', '1'))
+print(resta(-1, 0))
+print(resta('d', 8))
