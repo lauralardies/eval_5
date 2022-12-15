@@ -26,3 +26,12 @@ def contador(*arg):
             fichero.write(str(contenido))
     fichero.close()
     return contenido
+
+print(contador(),
+    contador('inc'),
+    contador('inc'),
+    contador('inc'),
+    contador('inc'),
+    contador('dec'),
+    contador(),
+    contador('dec'))
